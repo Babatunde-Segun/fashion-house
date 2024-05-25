@@ -1,0 +1,44 @@
+.whySewWithUs {
+  padding: 3.125rem 1.25rem;
+  background-color: var(--neutral-color);
+  text-align: center;
+}
+
+.whySewWithUs h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  max-width: 20rem;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+.card p {
+  margin: 0.625rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
