@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import ProductGrid from "./components/ProductGrid";
 import Footer from "./components/Footer";
 import WhySewWithUs from "./components/WhySewWithUs";
+import Testimonials from "./components/Testimonials";
 // import "./styles/global.css";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <ProductGrid />
       <WhySewWithUs />
+      <Testimonials />
       <Footer />
     </div>
   );
