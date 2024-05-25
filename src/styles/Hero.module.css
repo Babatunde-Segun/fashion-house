@@ -1,0 +1,30 @@
+.hero {
+  height: 100vh;
+  background: url("https://source.unsplash.com/1600x900/?fashion") center/cover
+    no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.heroContent {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+.shopNow {
+  margin-top: 1.25rem;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shopNow:hover {
+  background-color: var(--accent-color);
+}
