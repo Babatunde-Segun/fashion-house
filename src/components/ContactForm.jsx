@@ -25,7 +25,7 @@ const ContactForm = () => {
           <motion.button
             type="submit"
             className={styles.submitButton}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.02 }}
           >
             Send Message
           </motion.button>

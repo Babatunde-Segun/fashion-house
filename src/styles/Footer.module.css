@@ -24,6 +24,7 @@
 
 .newsletter {
   margin-bottom: 1.25rem;
+  max-width: 30rem;
 }
 
 .newsletterForm {

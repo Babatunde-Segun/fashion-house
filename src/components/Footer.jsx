@@ -1,5 +1,12 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -11,24 +18,24 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-facebook-f"></i>
+          <FaFacebookF />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter"></i>
+          <FaTwitter />
         </a>
         <a
           href="https://instagram.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-instagram"></i>
+          <FaInstagram />
         </a>
         <a
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin-in"></i>
+          <FaLinkedinIn />
         </a>
       </div>
       <div className={styles.newsletter}>
