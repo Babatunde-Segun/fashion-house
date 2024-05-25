@@ -1,0 +1,50 @@
+.contactForm {
+  padding: 3.125rem 1.25rem;
+  background-color: var(--neutral-color);
+  text-align: center;
+}
+
+.formContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+  margin-bottom: 1.25rem;
+  color: var(--primary-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+label {
+  text-align: left;
+  color: var(--secondary-color);
+}
+
+input,
+textarea {
+  padding: 0.625rem;
+  border: 1px solid #ccc;
+  border-radius: 0.625rem;
+}
+
+.submitButton {
+  padding: 0.625rem 1.25rem;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: var(--accent-color);
+}

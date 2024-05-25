@@ -5,6 +5,7 @@ import ProductGrid from "./components/ProductGrid";
 import Footer from "./components/Footer";
 import WhySewWithUs from "./components/WhySewWithUs";
 import Testimonials from "./components/Testimonials";
+import ContactForm from "./components/ContactForm";
 // import "./styles/global.css";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <ProductGrid />
       <WhySewWithUs />
       <Testimonials />
+      <ContactForm />
       <Footer />
     </div>
   );
