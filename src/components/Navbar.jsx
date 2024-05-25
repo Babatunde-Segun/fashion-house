@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import { motion } from "framer-motion";
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <motion.nav
       className={styles.nav}
@@ -11,7 +17,10 @@ const NavBar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className={styles.logo}>FashionStore</div>
-      <ul className={styles.navLinks}>
+      <div className={styles.menuButton} onClick={toggleMenu}>
+        ☰
+      </div>
+      <ul className={`${styles.navLinks} ${isOpen ? styles.showMenu : ""}`}>
         <li>
           <a href="#home">Home</a>
         </li>

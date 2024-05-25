@@ -15,6 +15,9 @@
 .navLinks {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .navLinks li {
@@ -29,4 +32,34 @@
 
 .navLinks a:hover {
   color: var(--accent-color);
+}
+
+.menuButton {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    display: none;
+  }
+
+  .navLinks.showMenu {
+    display: flex;
+  }
+
+  .navLinks li {
+    margin: 1rem 0;
+  }
 }
